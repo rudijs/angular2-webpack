@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Angular2 Webpack</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/css/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/css/theme/white.min.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <p>Angular2 and Webpack</p>
+        <img src="images/logo-angular2.png" alt="Angular2 Logo" width="350" style="border: 0px">
+        <img src="images/logo-webpack.png" alt="Webpack Logo" width="350" style="border: 0px">
+      </section>
+
+      <section>
+        <p>Quick Overview</p>
+        <p class="fragment" data-fragment-index="1">Angular2 is more a platform than a framework.</p>
+        <p class="fragment" data-fragment-index="2">+ Web apps</p>
+        <p class="fragment" data-fragment-index="3">+ Mobile apps</p>
+        <p class="fragment" data-fragment-index="4">+ Native apps w/ NativeScript</p>
+        <p class="fragment" data-fragment-index="5">+ Desktop apps w/ Electron</p>
+        <p class="fragment" data-fragment-index="6">+ Angular2 in web workers</p>
+        <p class="fragment" data-fragment-index="7">+ Angular2 Offline w/ service workers</p>
+      </section>
+
+      <section>
+        <p>Context of this demonstration is with:</p>
+        <ul>
+          <li>Web apps</li>
+          <li>Mobile apps</li>
+        </ul>
+      </section>
+
+      <section>
+        Application source code (HTML and Typescript):
+        <pre><code data-trim data-noescape>
+components/contact.component.ts
+components/contact.html
+components/home.component.ts
+components/home.html
+services/contact.service.ts
+app.component.ts
+app.html
+bootstrap.ts
+index.html
+    </code></pre>
+      </section>
+
+      <section>
+        Application bundled code:
+        <pre><code data-trim data-noescape>
+bundle.js
+index.html
+    </code></pre>
+
+    index.html:
+        <pre><code data-trim>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Angular2 Webpack&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;h1&gt;Angular2 Webpack&lt;/h1&gt;
+  &lt;script src=&quot;bundle.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/js/reveal.min.js"></script>
+  <script>
+    Reveal.initialize();
+  </script>
+</body>
+
+</html>
